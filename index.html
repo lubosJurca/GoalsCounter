@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>People counter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>People entered</h1>
-    <h2 id="count-el">0</h2>
+    <div class="container">
+        <h1>People entered the stadium</h1>
+        <h2 id="count-el">0</h2>
+        <button class="add-people" onclick="increment()">Add person</button>
+        <button class="remove-people" onclick="decrement()">People left</button>
+    </div>
+
 </body>
+
+
+<script src="script.js"></script>
 
 </html>
