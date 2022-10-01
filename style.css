@@ -48,6 +48,15 @@ body {
 
 }
 
+#save-btn {
+    background: paleturquoise;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    color: black;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -60,4 +69,9 @@ button:hover {
 .remove-people:hover {
     background: lightcoral;
     color: black;
+}
+
+#save-btn:hover {
+    background: darkblue;
+    color: aliceblue;
 }

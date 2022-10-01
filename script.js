@@ -1,35 +1,29 @@
 let counter = 0
+let result = document.getElementById("count-el")
 
 
 function increment() {
     counter = counter + 1
-    console.log(counter)
-    document.getElementById("count-el").innerHTML = counter
+    result.innerHTML = counter
+    if (counter < 0) {
+        result.innerHTML = 0
+        counter = 0
+    }
 }
 
 
 function decrement() {
     counter = counter - 1
-    document.getElementById("count-el").innerHTML = counter
+    result.innerHTML = counter
+    if (counter < 0) {
+        result.innerHTML = 0
+        counter = 0
+
+    }
 }
 
 
-// let lap1 = 34
-// let lap2 = 33
-// let lap3 = 36
+function save() {
+    console.log(counter)
+}
 
-// function summary(a, b, c) {
-//     return sum = a + b + c
-// }
-
-// console.log(summary(lap1, lap2, lap3))
-
-    // let lapsCompleted = 0
-
-    // function increment() {
-    //     lapsCompleted = lapsCompleted + 1
-    //     console.log(lapsCompleted)
-    // }
-
-    // increment()
-    // increment()
