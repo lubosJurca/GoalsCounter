@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>People counter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <h1>People entered the stadium</h1>
+        <h1>Goals<br> scored</h1>
+        <hr>
         <h2 id="count-el">0</h2>
-        <button class="add-people" onclick="increment()">Add person</button>
-        <button class="remove-people" onclick="decrement()">People left</button>
+        <button class="add-people" onclick="increment()">Add </button>
+        <button class="remove-people" onclick="decrement()">Remove</button>
         <button id="save-btn" onclick="save()">Save</button>
-        <p id="saved-results">Previus entries:
+        <p id="saved-results">Previus record:
         </p>
     </div>
 

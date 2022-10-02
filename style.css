@@ -15,6 +15,7 @@ body {
 }
 
 .container {
+
     background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 1rem;
@@ -24,13 +25,21 @@ body {
         -5px -5px 10px black;
 }
 
+h1 {
+    font-family: 'Rubik Dirt', cursive;
+}
+
+button {
+    min-width: 5rem;
+}
+
 #count-el {
     font-size: 3rem;
     margin: 1rem;
 }
 
 .add-people {
-    background: lightgreen;
+    background: #3B999B;
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -39,17 +48,17 @@ body {
 }
 
 .remove-people {
-    background: darkred;
+    background: #EE5873;
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 0.5rem;
     font-weight: bold;
-    color: aliceblue;
+    color: #E3E4E6;
 
 }
 
 #save-btn {
-    background: paleturquoise;
+    background: #5778A3;
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -63,7 +72,7 @@ button:hover {
 
 .add-people:hover {
     background: darkgreen;
-    color: aliceblue;
+    color: #E3E4E6;
 }
 
 .remove-people:hover {
@@ -73,5 +82,12 @@ button:hover {
 
 #save-btn:hover {
     background: darkblue;
-    color: aliceblue;
+    color: #E3E4E6;
+}
+
+#saved-results {
+    color: #E3E4E6;
+    font-weight: lighter;
+    font-size: small;
+    color: gray;
 }
