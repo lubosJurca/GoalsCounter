@@ -1,22 +1,26 @@
 let counter = 0
 let result = document.getElementById("count-el")
+let savedResults = document.getElementById("saved-results")
+
+
+
 
 
 function increment() {
-    counter = counter + 1
-    result.innerHTML = counter
+    counter += 1
+    result.textContent = counter
     if (counter < 0) {
-        result.innerHTML = 0
+        result.textContent = 0
         counter = 0
     }
 }
 
 
 function decrement() {
-    counter = counter - 1
-    result.innerHTML = counter
+    counter -= 1
+    result.textContent = counter
     if (counter < 0) {
-        result.innerHTML = 0
+        result.textContent = 0
         counter = 0
 
     }
@@ -24,6 +28,11 @@ function decrement() {
 
 
 function save() {
-    console.log(counter)
+    let countString = counter + " - "
+
+    savedResults.textContent += countString
+
+
+
 }
 
